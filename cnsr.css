@@ -10,7 +10,7 @@
 } */
 nav li{
     margin: 0px 20px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     
 }
@@ -66,7 +66,7 @@ nav li{
     display: flex;
     /* flex-direction: column; */
     justify-content: space-between;
-    
+    /* align-items: start; */
     text-align: center;
     padding-bottom: 1rem;
 }
@@ -143,3 +143,6 @@ nav li{
         top: 0px;
     }
 }
+
+
+
