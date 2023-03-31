@@ -1,13 +1,14 @@
 
+nav .container-fluid{
+    display: flex;
+    align-items: center;
+}
+
 .navbar-collapse{
-    /* border: 1px solid black; */
+    
     justify-content: center;
 }
-/* nav a{
-    margin: 0px !important;
-    padding: 0px !important;
-    border: 1px solid black;
-} */
+
 nav li{
     margin: 0px 20px;
     font-size: 20px;
@@ -17,7 +18,7 @@ nav li{
 
 .hero{
     height: 80vh;
-    /* border: 2px solid; */
+    
     background-color: #00f0f7;
     border-radius: 0% 0% 35% 0%;
     
@@ -51,48 +52,21 @@ nav li{
 }
 .row{
     height: 100%;
-    /* width: 100%; */
+    
 }
 
 
 .team{
-    background-color: #00eff780;
-    /* color: whitesmoke; */
+    background-color: #00eff780;    
     border-radius: 10% 10% 0% 0%;
    
     
 }
 .team .row{
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
-    /* align-items: start; */
+    display: flex;    
+    justify-content: space-between;    
     text-align: center;
     padding-bottom: 1rem;
-}
-
-
-
-
-
-
-.contact{
-    background-color: #18181B;
-    padding-top: 20px;
-}
-.contact .row{
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.contact .way{
-    /* background-color: #00eff7e7; */
-    box-shadow: 0px 0px  13px #00f0f7;
-    
-    
 }
 
 .team .position{
@@ -107,6 +81,26 @@ nav li{
     
 }
 
+
+
+.contact{
+    background-color: #18181B;
+    padding-top: 20px;
+}
+.contact .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .way{
+    box-shadow: 0px 0px  13px #00f0f7;   
+    
+}
+
+
+
 .footer{
     height: 20vh;
     background-color: #2A3245;
@@ -114,7 +108,6 @@ nav li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     
 }
 
@@ -145,3 +138,35 @@ nav li{
 }
 
 
+
+@media only screen and (max-width:650px) {
+    .hero{
+        /* position: relative;
+        display: flex;
+        justify-content: center; */
+        max-height: 50vh;
+        min-height: 0vh;
+    
+    }
+    
+    /* .hero .image{
+        position: absolute;
+        float: left;
+        left: 0px;
+        top: 20px;
+        z-index: 1;
+    }  */
+
+    .hero .text p{
+        position: relative;
+        z-index: 2;
+        /* width: 40vh; */
+        font-size: 12px !important;
+    }
+    .team{
+        background-color: #00eff780;    
+        border-radius: 0%;
+       
+        
+    }
+}
